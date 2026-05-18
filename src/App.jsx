@@ -1,4 +1,4 @@
-import PortfolioRouter from "./components/PortfolioRouter/PortfolioRouter";
+import PortfolioRouter from "./routes/PortfolioRouter";
 
 function App() {
   return <PortfolioRouter />;
