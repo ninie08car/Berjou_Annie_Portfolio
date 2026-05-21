@@ -7,9 +7,10 @@
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
-  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -44,4 +45,26 @@ h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
+}
+
+/* Background for Home section */
+.home-page .description {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("/src/assets/images/hero-orb.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3.5rem 1.5rem;
+  color: #fff;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  box-shadow: var(--shadow);
+}
+
+.home-page .description p {
+  margin: 0.6rem 0;
+  font-size: larger;
+  font-weight: 600;
+  color: #08060d;
 }
