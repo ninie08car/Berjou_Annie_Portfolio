@@ -4,7 +4,7 @@
     "title": "Booki",
     "tagline": "Site de réservation de voyages",
     "description": "Intégration responsive d'une maquette Figma en HTML et CSS pur. Mise en place d'une structure sémantique, d'un design mobile-first et de Flexbox pour une mise en page fluide sur tous les écrans.",
-    "image": "project-booki.jpg",
+    "image": "booki",
     "tech": ["HTML5", "CSS3", "Flexbox", "Responsive"],
     "year": "2025"
   },
@@ -13,7 +13,7 @@
     "title": "Ohmyfood",
     "tagline": "Menus de restaurants gastronomiques",
     "description": "Site mobile-first avec animations CSS avancées : transitions, keyframes, effets de chargement et interactions au survol. Architecture Sass modulaire pour un code maintenable.",
-    "image": "project-ohmyfood.jpg",
+    "image": "ohmyfood",
     "tech": ["Sass", "CSS Animations", "Mobile-first", "BEM"],
     "year": "2026"
   },
@@ -22,7 +22,7 @@
     "title": "Kasa",
     "tagline": "Plateforme de location entre particuliers",
     "description": "Application React complète avec React Router pour la navigation, composants réutilisables, gestion d'état et consommation d'une API JSON. Premier projet full React de la formation.",
-    "image": "project-kasa.jpg",
+    "image": "kasa",
     "tech": ["React", "React Router", "Sass", "JSX"],
     "year": "2026"
   }
