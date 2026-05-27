@@ -19,24 +19,15 @@ function Description() {
           design soignée et le code propre. Voici un aperçu de mes projets de
           formation.
         </p>
-        <NavLink
-          to="/projects"
-          end
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
-        >
-          Voir mes projets
-        </NavLink>
-        <NavLink
-          to="/contact"
-          end
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
-        >
-          Me contacter
-        </NavLink>
+        <div className="description-buttons">
+          <NavLink to="/projects" className="btn-primary">
+            Voir mes projets
+          </NavLink>
+
+          <NavLink to="/contact" className="btn-secondary">
+            Me contacter
+          </NavLink>
+        </div>
       </div>
     </section>
   );

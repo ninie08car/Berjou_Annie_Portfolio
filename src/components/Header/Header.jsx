@@ -12,7 +12,6 @@ function Header() {
         <nav className="nav">
           <NavLink
             to="/"
-            end
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
