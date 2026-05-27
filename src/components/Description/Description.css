@@ -1,0 +1,25 @@
+.home-description {
+  padding: 80px 7%;
+  background: #f8f4f3;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-description h2 {
+  font-size: 3rem;
+  color: #07142b;
+  margin: 10px 0;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.home-description h2 span {
+  background: linear-gradient(135deg, #ff6a2a 0%, #ff2f92 55%, #7b4dff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-description p {
+  line-height: 1.8;
+}

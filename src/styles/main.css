@@ -50,7 +50,7 @@ h2 {
 /* Background for Home section */
 .home-page .description {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
     url("../assets/images/hero-orb.jpg");
   background-size: cover;
   background-position: center;
