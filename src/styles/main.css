@@ -1,70 +1,63 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff2f7;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Import des polices */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 
-body {
+/* Reset basique */
+* {
   margin: 0;
-  background: var(--bg);
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* Variables globales */
+:root {
+  --font-title: "Space Grotesk", sans-serif;
+  --font-text: "DM Sans", sans-serif;
+
+  --primary: #4f46e5;
+  --secondary: #64748b;
+  --background: #ffffff;
+  --text: #0f172a;
+
+  --radius: 12px;
+}
+
+/* Style global */
+body {
+  font-family: var(--font-text);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Titres */
 h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-/* Background for Home section */
-.home-page .description {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
-    url("../assets/images/hero-orb.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 3.5rem 1.5rem;
-  color: #fff;
-  border-radius: 12px;
-  max-width: 1000px;
-  margin: 1.5rem auto;
-  box-shadow: var(--shadow);
-}
-
-.home-page .description p {
-  margin: 0.6rem 0;
-  font-size: larger;
+h2,
+h3 {
+  font-family: var(--font-title);
   font-weight: 600;
-  color: #08060d;
+}
+
+/* Liens */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Boutons simples */
+button {
+  font-family: inherit;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }
