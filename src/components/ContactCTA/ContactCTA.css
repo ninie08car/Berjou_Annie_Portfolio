@@ -2,7 +2,7 @@
   width: 1000px;
   margin: 40px auto;
   padding: 20px 20px;
-  border-radius: 40px;
+  border-radius: 50px;
   background: linear-gradient(135deg, #ff6a2a 0%, #ff2f92 55%, #7b4dff 100%);
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@
 
 .cta h2 {
   color: white;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: 60px;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 24px;

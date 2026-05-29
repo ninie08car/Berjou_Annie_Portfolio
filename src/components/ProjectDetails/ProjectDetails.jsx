@@ -28,15 +28,34 @@ function ProjectDetails() {
           >
             <div className="project-image">
               <img src={projectImages[project.image]} alt={project.title} />
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="github-link"
+              >
+                GitHub
+              </a>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                WebSite
+              </a>
             </div>
             <div className="project-content">
               <span className="project-meta">PROJET • {project.year}</span>
             </div>
             <div className="project-top">
               <h3>{project.title}</h3>
-              <button className="arrow-btn">↗</button>
             </div>
-            <p>{project.description}</p>
+            <p>{project.contexte}</p>
+            <p>{project.objectifs}</p>
+            <p>{project.competences}</p>
+            <p>{project.results}</p>
+            <p>{project.amelioration}</p>
             <div className="project-tags">
               {project.tech.map((tag, i) => (
                 <span key={i}>{tag}</span>

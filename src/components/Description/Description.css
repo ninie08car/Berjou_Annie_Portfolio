@@ -1,6 +1,6 @@
 .home-description {
   position: relative;
-  padding: 80px 300px;
+  padding: 80px 100px;
   min-height: 100vh;
   background-image: url("/dist/assets/hero-orb-CzxzWE6I.jpg");
   background-size: 140%;
@@ -10,9 +10,9 @@
 }
 
 .home-description h2 {
-  font-size: 100px;
+  font-size: 80px;
   color: #07142b;
-  margin: 50px 0;
+  margin: 20px 0;
   line-height: 1;
   font-weight: 800;
 }
@@ -24,9 +24,9 @@
 }
 
 .home-description p {
-  line-height: 1.8;
+  line-height: 1.5;
   font-size: large;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .description-buttons {
