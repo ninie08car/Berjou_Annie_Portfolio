@@ -3,7 +3,17 @@
 }
 
 .stack-technique h2 {
-  margin-bottom: 1rem;
+  font-size: 40px;
+  color: #07142b;
+  margin: 10px 100px;
+  font-weight: 800;
+}
+
+.stack-technique h2 span {
+  background: linear-gradient(90deg, #ff7b2f, #ff3f7f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .stack-list {

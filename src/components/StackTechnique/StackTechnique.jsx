@@ -11,7 +11,9 @@ import "./StackTechnique.css";
 function StackTechnique() {
   return (
     <section className="stack-technique">
-      <h2>Compétences Techniques</h2>
+      <h2>
+        Compétences <span>Techniques</span>
+      </h2>
       <div className="stack-list">
         <span>
           <img src={LogoFigma} alt="logo-figma" />
