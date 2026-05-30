@@ -29,13 +29,6 @@ function ContactForm() {
               <p>France • Aquitaine</p>
             </div>
           </div>
-          <div className="info">
-            <div className="icon">🕒</div>
-            <div>
-              <small>Disponibilité</small>
-              <p>Ouverte aux opportunités de travail</p>
-            </div>
-          </div>
         </div>
       </div>
 

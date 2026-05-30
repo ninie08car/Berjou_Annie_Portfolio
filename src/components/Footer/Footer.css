@@ -2,19 +2,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  padding: 1rem 0;
-  z-index: 50;
+  gap: 20px;
+  padding: 20px;
   background: #f8f4f3;
-  border-bottom: 1px solid #ddd;
-}
-
-.footer img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
+  border-top: 1px solid #ddd;
 }
 
 .footer p {
   margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
 }
