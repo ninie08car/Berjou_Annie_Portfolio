@@ -19,13 +19,17 @@
 }
 
 .contact-left h2 {
-  font-size: 60px;
+  font-size: 40px;
   color: #07142b;
-  margin: 20px 0;
+  margin: 10px 0;
+  font-weight: 800;
 }
 
 .contact-left span {
-  color: #d98c9a;
+  background: linear-gradient(90deg, #ff7b2f, #ff3f7f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-left p:not(.subtitle) {
