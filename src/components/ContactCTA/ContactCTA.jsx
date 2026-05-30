@@ -11,7 +11,7 @@ export default function ContactCTA() {
           Je suis ouverte aux opportunités, stages et collaborations freelance.
         </p>
         <NavLink to="/contact" className="cta-button">
-          Démarrer une conversation<span>→</span>
+          Démarrer une conversation
         </NavLink>
       </div>
     </section>

@@ -18,7 +18,7 @@ function ContactForm() {
             <div className="icon">✉️</div>
             <div>
               <small>Email</small>
-              <p>hello@example.com</p>
+              <p>annie.carrau@wanandoo.fr</p>
             </div>
           </div>
 
@@ -26,15 +26,14 @@ function ContactForm() {
             <div className="icon">📍</div>
             <div>
               <small>Localisation</small>
-              <p>France • Remote</p>
+              <p>France • Aquitaine</p>
             </div>
           </div>
-
           <div className="info">
             <div className="icon">🕒</div>
             <div>
               <small>Disponibilité</small>
-              <p>Ouverte aux opportunités</p>
+              <p>Ouverte aux opportunités de travail</p>
             </div>
           </div>
         </div>
