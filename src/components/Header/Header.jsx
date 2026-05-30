@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import profilImage from "../../assets/images/profil.png";
 
 function Header() {
   return (
     <header className="header">
       <div className="header-container">
         <NavLink to="/" className="logo">
-          <span className="logo-icon"></span>
+          <img src={profilImage} alt="Annie Berjou" className="logo-photo" />
           <span>Portfolio Berjou Annie</span>
         </NavLink>
         <nav className="nav">

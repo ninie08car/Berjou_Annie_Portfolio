@@ -68,6 +68,7 @@
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #ff6a2a 0%, #ff2f92 55%, #7b4dff 100%);
+  background-color: #5f6b7a;
   color: white;
+  text-decoration: none;
 }

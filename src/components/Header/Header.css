@@ -1,12 +1,12 @@
 .header {
   z-index: 50;
-  background: #fce2ee;
+  background: #f8f4f3;
   border-bottom: 1px solid #ddd;
 }
 
 .header-container {
   max-width: 1280px;
-  height: 64px;
+  height: 100px;
   margin: 0 auto;
   padding: 0 1.5rem;
   display: flex;
@@ -25,11 +25,12 @@
   text-decoration: none;
 }
 
-.logo-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, #ff6a2a 0%, #ff2f92 55%, #7b4dff 100%);
+.logo-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
 }
 
 /* Navigation desktop */
@@ -44,16 +45,18 @@
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #f53e06;
+  color: #07142b;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #111827;
+  background-color: #5f6b7a;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-link.active {
-  background: #e625a5;
-  color: #111827;
+  background: #c76a7a;
+  color: white;
 }
