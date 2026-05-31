@@ -20,14 +20,24 @@
   gap: 15px;
 }
 
+.footer-icons a {
+  display: inline-flex;
+}
+
 .footer-icons img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.footer-icons img:hover {
-  transform: scale(1.1);
+.footer-icons a:hover img {
+  transform: translateY(-3px);
+}
+
+.footer-icons a:focus-visible {
+  outline: 2px solid #c76a7a;
+  outline-offset: 4px;
+  border-radius: 50%;
 }

@@ -37,7 +37,7 @@
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 25px;
 }
 
 .nav-link {
@@ -48,6 +48,7 @@
   color: #07142b;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-left: 10px;
 }
 
 .nav-link:hover {
