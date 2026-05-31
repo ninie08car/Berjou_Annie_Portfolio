@@ -33,7 +33,7 @@
     "slug": "kasa",
     "title": "Kasa",
     "github": "https://github.com/ninie08car/kasa.git",
-    "demo": "https://ninie08car.github.io/kasa/",
+    "demo": "",
     "tagline": "Plateforme de location entre particuliers",
     "contexte": "Kasa est une application de location immobilière développée en React permettant d’afficher des logements et leurs informations de manière dynamique.",
     "objectifs": "L’objectif était de créer une application React en utilisant les composants, le routage et la gestion des données JSON.",
