@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 import "./ProjectDetails.css";
 import projects from "../../data/projects.json";
 
@@ -13,7 +14,13 @@ const projectImages = {
 };
 
 function ProjectDetails() {
-  const [selectedProject, setSelectedProject] = useState(0);
+  const { slug } = useParams();
+
+  const defaultIndex = slug ? projects.findIndex((p) => p.image === slug) : 0;
+
+  const [selectedProject, setSelectedProject] = useState(
+    defaultIndex !== -1 ? defaultIndex : 0,
+  );
 
   const project = projects[selectedProject];
 
@@ -56,6 +63,7 @@ function ProjectDetails() {
             >
               GitHub
             </a>
+
             {project.demo && (
               <a
                 href={project.demo}

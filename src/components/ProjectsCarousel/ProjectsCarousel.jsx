@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./ProjectsCarousel.css";
 import projects from "../../data/projects.json";
 
@@ -52,7 +53,13 @@ function ProjectsCarousel() {
             ))}
           </div>
           <h3>{project.title}</h3>
-          <img src={projectImages[project.image]} alt={project.title} />
+          <Link to={`/projects/${project.image}`}>
+            <img
+              src={projectImages[project.image]}
+              alt={project.title}
+              className="project-img"
+            />
+          </Link>
         </div>
 
         {/* Flèche droite */}

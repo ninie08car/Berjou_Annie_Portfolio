@@ -16,6 +16,7 @@ function PortfolioRouter() {
         <Route path="/" element={<Home />} />
         {/* Route Projects */}
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<Projects />} />
         {/* Route Contact */}
         <Route path="/contact" element={<Contact />} />
         {/* Route 404 */}
