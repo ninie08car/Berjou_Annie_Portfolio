@@ -1,0 +1,117 @@
+.carousel-section {
+  padding: 80px 7%;
+  background: #f8f4f3;
+  min-height: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-header {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.carousel-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff4f7a;
+  letter-spacing: 2px;
+}
+
+.carousel-header h2 {
+  font-size: 40px;
+  color: #07142b;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.carousel-header h2 span {
+  background: linear-gradient(90deg, #ff7b2f, #ff3f7f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+}
+
+/* Carte */
+.carousel-card {
+  width: 70%;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Dots AU DESSUS de l'image */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d6d6d6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #ff4f7a;
+  transform: scale(1.2);
+}
+
+/* Image */
+.carousel-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #f5f5f5;
+}
+
+.carousel-card h3 {
+  margin-top: 15px;
+  color: #07142b;
+}
+
+/* Flèches */
+.arrow {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #c76a7a;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.arrow:hover {
+  background: #5f6b7a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 90%;
+  }
+
+  .carousel-card img {
+    height: 250px;
+  }
+}
