@@ -151,7 +151,7 @@
 }
 
 .project-top h3 {
-  font-size: 2rem;
+  font-size: 32px;
   color: #07142b;
   padding-left: 10px;
   margin: 10px 0 18px;
@@ -176,7 +176,7 @@
   color: #8c6a61;
   padding: 8px 14px;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -193,7 +193,7 @@
   }
 
   .project-top h3 {
-    font-size: 1.6rem;
+    font-size: 25px;
   }
 
   .project-image {
@@ -207,7 +207,7 @@
   }
 
   .projects-header h2 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .project-image {
