@@ -24,7 +24,7 @@
 
 .cta p {
   color: white;
-  font-size: 1.2rem;
+  font-size: 19px;
   font-weight: 400;
   margin-bottom: 40px;
 }
@@ -35,7 +35,7 @@
   border: none;
   border-radius: 999px;
   padding: 18px 34px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
@@ -60,7 +60,7 @@
 @media (max-width: 1024px) {
   .cta {
     padding: 24px 24px;
-    width: calc(100% - 3rem);
+    width: calc(100% - 48px);
   }
 
   .cta h2 {
@@ -78,7 +78,7 @@
   }
 
   .cta p {
-    font-size: 1.05rem;
+    font-size: 17px;
     margin-bottom: 28px;
   }
 
@@ -100,7 +100,7 @@
   }
 
   .cta p {
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 24px;
   }
 
