@@ -16,7 +16,9 @@ function Description() {
         </h2>
         {/*SECTION A PROPOS */}
         <div className="about-section">
-          <h3>À propos</h3>
+          <h3>
+            À <span>propos</span>
+          </h3>
           <p>
             Bonjour, je suis Annie Berjou, développeuse web junior passionnée
             par le design d’interfaces modernes et le développement avec React.
@@ -29,7 +31,9 @@ function Description() {
         </div>
         {/* SECTION PARCOURS */}
         <div className="journey-section">
-          <h3>Parcours</h3>
+          <h3>
+            <span>Parc</span>ours
+          </h3>
           <p>
             Je maîtrise principalement HTML, CSS et React, et je continue à
             approfondir JavaScript. J’aime particulièrement créer des interfaces
