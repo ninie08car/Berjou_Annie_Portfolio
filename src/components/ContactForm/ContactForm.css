@@ -108,3 +108,83 @@
   opacity: 0.9;
   background-color: #5f6b7a;
 }
+
+@media (max-width: 1024px) {
+  .contact {
+    padding: 60px 6%;
+    gap: 40px;
+  }
+
+  .contact-left {
+    width: 48%;
+  }
+
+  .contact-form {
+    width: 48%;
+    padding: 24px;
+  }
+
+  .contact-left h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 50px 5%;
+    gap: 30px;
+  }
+
+  .contact-left,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact-left h2 {
+    font-size: 32px;
+  }
+
+  .contact-left p,
+  .info p,
+  .info small {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact {
+    padding: 40px 4%;
+    gap: 24px;
+  }
+
+  .contact-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .contact-left .subtitle {
+    font-size: 18px;
+  }
+
+  .contact-left p,
+  .info p,
+  .info small {
+    font-size: 0.92rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
