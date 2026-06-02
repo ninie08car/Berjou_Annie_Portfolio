@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer";
 
 function PortfolioRouter() {
   return (
-    <Router basename="/bejou-annie-portfolio">
+    <Router basename="/Berjou_Annie_Portfolio">
       <Header />
       <Routes>
         {/* Route Accueil */}
