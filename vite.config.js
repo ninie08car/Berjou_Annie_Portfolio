@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/bejou-annie-portfolio/",
+  base: "/Berjou_Annie_Portfolio/",
   plugins: [react()],
 });
