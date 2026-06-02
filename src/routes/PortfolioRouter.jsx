@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, HashRouter as Router } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
@@ -9,7 +9,7 @@ import Footer from "../components/Footer/Footer";
 
 function PortfolioRouter() {
   return (
-    <Router basename="/Berjou_Annie_Portfolio/">
+    <Router>
       <Header />
       <Routes>
         {/* Route Accueil */}
