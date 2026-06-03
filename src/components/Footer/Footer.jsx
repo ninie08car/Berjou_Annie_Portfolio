@@ -9,7 +9,7 @@ function Footer() {
       <p>&copy; 2026 Berjou Annie. Tous droits réservés.</p>
       <div className="footer-icons">
         <a
-          href="https://github.com/TON_PSEUDO"
+          href="https://github.com/ninie08car"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -17,7 +17,7 @@ function Footer() {
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a
-          href="https://linkedin.com/in/TON_PROFIL"
+          href="https://linkedin.com/in/annie-berjou-1044b137b"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
