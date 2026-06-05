@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import profilImage from "../../assets/images/profil.png";
+import profilImage from "../../assets/images/profil.webp";
 
 function Header() {
   return (
