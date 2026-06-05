@@ -2,6 +2,13 @@ import "./ContactForm.css";
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const isEmailJSConfigured = Boolean(
+  EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID,
+);
+
 function ContactForm() {
   const [formData, setFormData] = useState({
     nom: "",
@@ -12,10 +19,11 @@ function ContactForm() {
   const [submitStatus, setSubmitStatus] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  // Initialiser EmailJS au montage du composant
   useEffect(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-  }, []);
+    if (isEmailJSConfigured) {
+      emailjs.init(EMAILJS_PUBLIC_KEY);
+    }
+  }, [isEmailJSConfigured]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,10 +38,23 @@ function ContactForm() {
     setIsLoading(true);
     setSubmitStatus("");
 
+    if (!isEmailJSConfigured) {
+      console.error("EmailJS non configuré:", {
+        EMAILJS_PUBLIC_KEY,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+      });
+      setSubmitStatus(
+        "Le service de contact n'est pas configuré. Contactez-moi directement par email.",
+      );
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const response = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.nom,
           from_email: formData.email,
@@ -50,7 +71,7 @@ function ContactForm() {
         setSubmitStatus("Erreur lors de l'envoi. Veuillez réessayer.");
       }
     } catch (error) {
-      console.error("Erreur:", error);
+      console.error("Erreur lors de l'envoi EmailJS:", error);
       setSubmitStatus(
         "Erreur lors de l'envoi. Contactez-moi directement par email.",
       );
