@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import "./ProjectDetails.css";
 import projects from "../../data/projects.json";
 
-import BookiImage from "../../assets/images/Projet_Booki.png";
-import OhmyfoodImage from "../../assets/images/Projet_Ohmyfood.png";
+import BookiImage from "../../assets/images/Projet_Booki.webp";
+import OhmyfoodImage from "../../assets/images/Projet_Ohmyfood.webp";
 import KasaImage from "../../assets/images/Projet_Kasa.webp";
 
 const projectImages = {
