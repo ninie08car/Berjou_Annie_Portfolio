@@ -1,6 +1,6 @@
 import "./ContactForm.css";
 import { useState, useEffect } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -52,28 +52,47 @@ function ContactForm() {
     }
 
     try {
-      const response = await emailjs.send(
+      const templateParams = {
+        from_name: formData.nom,
+        from_email: formData.email,
+        reply_to: formData.email,
+        subject: formData.sujet,
+        message: formData.message,
+        to_email: "annie.carrau@wanandoo.fr",
+      };
+
+      console.log("EmailJS send", {
+        serviceId: EMAILJS_SERVICE_ID,
+        templateId: EMAILJS_TEMPLATE_ID,
+        templateParams,
+        publicKey: EMAILJS_PUBLIC_KEY,
+      });
+
+      const result = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.nom,
-          from_email: formData.email,
-          subject: formData.sujet,
-          message: formData.message,
-          to_email: "annie.carrau@wanandoo.fr",
-        }
+        templateParams,
+        EMAILJS_PUBLIC_KEY,
       );
 
-      if (response.status === 200) {
+      console.log("EmailJS result", result);
+
+      if (result.status === 200 || result.text === "OK") {
         setSubmitStatus("Message envoyé avec succès! 🎉");
         setFormData({ nom: "", email: "", sujet: "", message: "" });
       } else {
-        setSubmitStatus("Erreur lors de l'envoi. Veuillez réessayer.");
+        console.error("Réponse EmailJS inattendue:", result);
+        setSubmitStatus(
+          `Erreur lors de l'envoi (${result.status} ${result.text}). Veuillez réessayer.`,
+        );
       }
     } catch (error) {
+      console.log("Status :", error.status);
+      console.log("Text :", error.text);
+      console.log("Erreur complète :", error);
       console.error("Erreur lors de l'envoi EmailJS:", error);
       setSubmitStatus(
-        "Erreur lors de l'envoi. Contactez-moi directement par email.",
+        `Erreur lors de l'envoi (${error.status || error.text || error.message || "400"}). Contactez-moi directement par email.`,
       );
     } finally {
       setIsLoading(false);

@@ -24,7 +24,7 @@ function Footer() {
         >
           <img src={linkedinIcon} alt="LinkedIn" />
         </a>
-        <a href="mailto:annie.carrau@wanadoo.fr">
+        <a href="mailto:annie.berjou@gmail.com">
           <img src={mailIcon} alt="Email" />
         </a>
       </div>
