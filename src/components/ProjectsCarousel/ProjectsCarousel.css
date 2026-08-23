@@ -109,12 +109,72 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .carousel-section {
+    padding: 60px 50px;
+  }
+}
+
 @media (max-width: 768px) {
+  .carousel-section {
+    padding: 50px 25px;
+  }
+
+  .carousel-wrapper {
+    gap: 8px;
+  }
+
   .carousel-card {
-    width: 90%;
+    width: calc(100% - 90px);
   }
 
   .carousel-card img {
     height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-section {
+    min-height: auto;
+    padding: 30px 15px;
+  }
+
+  .carousel-header {
+    margin-bottom: 20px;
+  }
+
+  .carousel-subtitle {
+    font-size: 16px;
+  }
+
+  .carousel-header h2 {
+    font-size: 30px;
+  }
+
+  .carousel-header p {
+    font-size: 15px;
+  }
+
+  .carousel-wrapper {
+    gap: 6px;
+  }
+
+  .carousel-card {
+    width: calc(100% - 78px);
+    padding: 10px;
+  }
+
+  .carousel-card img {
+    height: 180px;
+  }
+
+  .carousel-card h3 {
+    margin-top: 8px;
+  }
+
+  .arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
   }
 }

@@ -92,3 +92,18 @@
     font-size: 13px;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}
